@@ -13,18 +13,63 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+/* reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Cтилі для обнулення верхніх відступів у елементів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Клас для онулення базових властивостей (ul) */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Класс для онулення базовых властивостей у силці(а) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Властивості для коректного відображення картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Властивості для онуленя у крсива у адрес */
+
+address {
+  font-style: normal;
+}
+/* Container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Кнопка   */
 span {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
 .header-list {
   display: flex;
 }
@@ -53,6 +98,10 @@ span {
 }
 
 .header-logo-text {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -69,7 +118,19 @@ span {
   color: var(--title-text-color);
 }
 
+.menu-nav,
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  gap: 50px;
+}
+
 .header-link.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -96,6 +157,17 @@ span {
 .header-link.link.current:focus {
   color: var(--accent-color);
 }
+/* --------Contact------------ */
+.contacts-list {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+}
+
+.сontact-link:last-child {
+  margin-left: 50px;
+}
 
 .сontact-link {
   color: var(--primary-text-color);
@@ -114,6 +186,8 @@ span {
 .hero {
   background-color: var(--background-color-hero-footer);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -123,9 +197,14 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  max-width: 696px;
+  margin-bottom: 45px;
+  margin: auto;
 }
 
 .hero-btn.button {
+  display: block;
+  margin: 30px auto 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
