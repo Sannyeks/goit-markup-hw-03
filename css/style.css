@@ -86,13 +86,13 @@ span {
 
 /* Властивості для класу Section */
 
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* Dластивості для класу Footer */
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color-hero-footer);
@@ -253,9 +253,6 @@ footer {
 }
 
 /* -----------------Our Advantage------------- */
-.about {
-  background-color: var(--background-color);
-}
 
 .about-list {
   display: flex;
@@ -287,12 +284,9 @@ footer {
 }
 
 /* ----------------Our Work----------------- */
-img {
-  display: block;
-}
 
 .work {
-  background-color: var(--background-color);
+  padding-top: 0;
 }
 
 .section-title {
@@ -436,9 +430,6 @@ img {
 }
 
 /* Portfolio Main2 */
-.portfolio {
-  color: var(--background-color);
-}
 
 .filter-btns-list {
   display: flex;
