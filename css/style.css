@@ -440,11 +440,6 @@ img {
   color: var(--background-color);
 }
 
-.portfolio-nav {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filter-btns-list {
   display: flex;
   justify-content: center;
